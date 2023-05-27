@@ -1,210 +1,28 @@
 import React from "react";
 
-const HeaderNav = ()=>{
+const HeaderNav2 = ()=>{
     return(
-        <div className="edu_navihation_header_wrapper float_left">
+        <div className="edu_logo_header_wrapper float_left">
 		<div id="search_open" className="gc_search_box">
 			<input type="text" placeholder="Search here"/>
 			<button><i className="fa fa-search" aria-hidden="true"></i>
 			</button>
 		</div>
 		<div className="container">
-			<header className="mobail_menu d-block d-sm-block d-md-block d-lg-none d-xl-none">
-				<div className="cd-dropdown-wrapper">
-					<a className="house_toggle" href="#0">	<i className="flaticon-menu"></i>
-					</a>
-					<nav className="cd-dropdown">
-						<h2><a href="#">Edu365</a></h2>
-						<a href="#0" className="cd-close">Close</a>
-						<ul className="cd-dropdown-content">
-							<li>
-								<form className="cd-search">
-									<input type="search" placeholder="Search..."/>
-								</form>
-							</li>
-							<li className="has-children">	<a href="#">Home</a>
-								<ul className="cd-secondary-dropdown icon_menu is-hidden">
-									<li className="go-back"><a href="#0">Menu</a>
-									</li>
-									<li><a href="/">Home-I</a>
-									</li>
-									<li><a href="/home2">Home-II</a>
-									</li>
-								</ul>
-							</li>
-							<li><a href="about_us.html">About</a>
-							</li>
-							<li className="has-children">	<a href="#">Careers</a>
-								<ul className="cd-secondary-dropdown is-hidden">
-									<li className="go-back"><a href="#0">Menu</a>
-									</li>
-									<li className="has-children">	<a href="#">fire + bulding safety</a>
-										<ul className="cd-secondary-dropdown is-hidden">
-											<li className="go-back"><a href="#0">Menu</a>
-											</li>
-											<li><a href="#">Environmental Consulting</a>
-											</li>
-											<li><a href="#">Government and Military</a>
-											</li>
-											<li><a href="#">Healthcare</a>
-											</li>
-											<li><a href="#">Historic Buildings & Museums</a>
-											</li>
-											<li><a href="#">Hospitality and Entertainment</a>
-											</li>
-										</ul>
-										{/* <!-- .cd-secondary-dropdown --> */}
-									</li>
-									{/* <!-- .has-children --> */}
-									<li className="has-children">	<a href="#">risk + hazards</a>
-										<ul className="cd-secondary-dropdown is-hidden">
-											<li className="go-back"><a href="#0">Menu</a>
-											</li>
-											<li><a href="#">Environmental Consulting</a>
-											</li>
-											<li><a href="#">Government and Military</a>
-											</li>
-											<li><a href="#">Healthcare</a>
-											</li>
-											<li><a href="#">Historic Buildings & Museums</a>
-											</li>
-											<li><a href="#">Hospitality and Entertainment</a>
-											</li>
-										</ul>
-										{/* <!-- .cd-secondary-dropdown --> */}
-									</li>
-									{/* <!-- .has-children --> */}
-									<li className="has-children">	<a href="#">emergency management & planning</a>
-										<ul className="cd-secondary-dropdown is-hidden">
-											<li className="go-back"><a href="#0">Menu</a>
-											</li>
-											<li><a href="#">Environmental Consulting</a>
-											</li>
-											<li><a href="#">Government and Military</a>
-											</li>
-											<li><a href="#">Healthcare</a>
-											</li>
-											<li><a href="#">Historic Buildings & Museums</a>
-											</li>
-											<li><a href="#">Hospitality and Entertainment</a>
-											</li>
-										</ul>
-										{/* <!-- .cd-secondary-dropdown --> */}
-									</li>
-									{/* <!-- .has-children --> */}
-									<li className="has-children">	<a href="#">security</a>
-										<ul className="cd-secondary-dropdown is-hidden">
-											<li className="go-back"><a href="#0">Menu</a>
-											</li>
-											<li><a href="#">Environmental Consulting</a>
-											</li>
-											<li><a href="#">Government and Military</a>
-											</li>
-											<li><a href="#">Healthcare</a>
-											</li>
-											<li><a href="#">Historic Buildings & Museums</a>
-											</li>
-											<li><a href="#">Hospitality and Entertainment</a>
-											</li>
-										</ul>
-										{/* <!-- .cd-secondary-dropdown --> */}
-									</li>
-									{/* <!-- .has-children --> */}
-									<li className="has-children">	<a href="#">forensics</a>
-										<ul className="cd-secondary-dropdown is-hidden">
-											<li className="go-back"><a href="#0">Menu</a>
-											</li>
-											<li><a href="#">Environmental Consulting</a>
-											</li>
-											<li><a href="#">Government and Military</a>
-											</li>
-											<li><a href="#">Healthcare</a>
-											</li>
-											<li><a href="#">Historic Buildings & Museums</a>
-											</li>
-											<li><a href="#">Hospitality and Entertainment</a>
-											</li>
-										</ul>
-										{/* <!-- .cd-secondary-dropdown --> */}
-									</li>
-									{/* <!-- .has-children --> */}
-									<li className="has-children">	<a href="#">training + software</a>
-										<ul className="cd-secondary-dropdown is-hidden">
-											<li className="go-back"><a href="#0">Menu</a>
-											</li>
-											<li><a href="#">Environmental Consulting</a>
-											</li>
-											<li><a href="#">Government and Military</a>
-											</li>
-											<li><a href="#">Healthcare</a>
-											</li>
-											<li><a href="#">Historic Buildings & Museums</a>
-											</li>
-											<li><a href="#">Hospitality and Entertainment</a>
-											</li>
-										</ul>
-										{/* <!-- .cd-secondary-dropdown --> */}
-									</li>
-									{/* <!-- .has-children --> */}
-								</ul>
-								{/* <!-- .cd-secondary-dropdown --> */}
-							</li>
-							{/* <!-- .has-children --> */}
-							<li className="has-children">	<a href="#">Blog</a>
-								<ul className="cd-secondary-dropdown icon_menu is-hidden">
-									<li className="go-back"><a href="#0">Menu</a>
-									</li>
-									<li><a href="blog_category.html">Blog-Category</a>
-									</li>
-									<li><a href="blog_single.html">Blog-Single</a>
-									</li>
-								</ul>
-							</li>
-							<li className="has-children">	<a href="#">Gallery</a>
-								<ul className="cd-secondary-dropdown icon_menu is-hidden">
-									<li className="go-back"><a href="#0">Menu</a>
-									</li>
-									<li><a href="gallery_III.html">Gallery-III</a>
-									</li>
-									<li><a href="gallery_IV.html">Gallery-IV</a>
-									</li>
-								</ul>
-							</li>
-							<li className="has-children">	<a href="#">Pages</a>
-								<ul className="cd-secondary-dropdown icon_menu is-hidden">
-									<li className="go-back"><a href="#0">Menu</a>
-									</li>
-									<li><a href="error.html">Error</a>
-								</li>
-								<li><a href="course.html">Course</a>
-								</li>
-								<li><a href="course_single.html">Course-Single</a>
-								</li>
-								<li><a href="service.html">Services</a>
-								</li>
-								<li><a href="teacher.html">Teacher</a>
-								</li>
-								<li><a href="teacher_single.html">Teacher-Single</a>
-								</li>
-								<li><a href="event.html">Event</a>
-								</li>
-								<li><a href="event_single.html">Event-Single</a>
-								</li>
-								<li><a href="login.html">Login</a>
-								</li>
-								<li><a href="register.html">Register</a>
-								</li>
-								</ul>
-							</li>
-							<li><a href="contact_us">Contact Us</a>
-							</li>
-						</ul>
-						{/* <!-- .cd-dropdown-content --> */}
-					</nav>
-					{/* <!-- .cd-dropdown --> */}
+			<div className="edu_logo_main_wrapper">
+				<a href="/">
+					<img src="images/logo.png" alt="logo"/>
+				</a>
+			</div>
+			<div className="edu_seach_wrapper">
+				<div id="search_button">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_2" x="0px" y="0px" viewBox="0 0 451 451" style={{enableBackground:'new 0 0 451 451'}} xmlSpace="preserve">
+						<g>
+							<path id="search" d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3   s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4   C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3   s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z" />
+						</g>
+					</svg>
 				</div>
-				{/* <!-- .cd-dropdown-wrapper --> */}
-			</header>
+			</div>
 			<div className="kv_navigation_wrapper">
 				<div className="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
 					<ul className="main_nav_ul">
@@ -502,108 +320,211 @@ const HeaderNav = ()=>{
 				</div>
 				{/* <!-- mainmenu end --> */}
 			</div>
-			<div className="edu_profile_wrapper">
-				<div className="nice-select" tabindex="0">	<span className="current"><img src="images/profile_img.png" alt="img"/> <span className="hidden_xs_content"></span></span>
-					<ul className="list">
-						<li><a href="#">Upgrade Now</a>
-						</li>
-						<li><a href="#"> Profile</a>
-						</li>
-						<li><a href="#"> My Balance</a>
-						</li>
-						<li><a href="#"> My Task</a>
-						</li>
-						<li><a href="#"> My Calender</a>
-						</li>
-						<li><a href="#"> Inbox</a>
-						</li>
-						<li><a href="#"> Setting</a>
-						</li>
-						<li><a href="#"> Help</a>
-						</li>
-						<li><a href="#"> Lock Screen</a>
-						</li>
-						<li><a href="#"> Logout</a>
-						</li>
-					</ul>
+			<header className="mobail_menu d-block d-sm-block d-md-block d-lg-none d-xl-none">
+				<div className="cd-dropdown-wrapper">
+					<a className="house_toggle" href="#0">	<i className="flaticon-menu"></i>
+					</a>
+					<nav className="cd-dropdown">
+						<h2><a href="#">Edu365</a></h2>
+						<a href="#0" className="cd-close">Close</a>
+						<ul className="cd-dropdown-content">
+							<li>
+								<form className="cd-search">
+									<input type="search" placeholder="Search..."/>
+								</form>
+							</li>
+							<li className="has-children">	<a href="#">Home</a>
+								<ul className="cd-secondary-dropdown icon_menu is-hidden">
+									<li className="go-back"><a href="#0">Menu</a>
+									</li>
+									<li><a href="/">Home-I</a>
+									</li>
+									<li><a href="/home2">Home-II</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="about_us.html">About</a>
+							</li>
+							<li className="has-children">	<a href="#">Careers</a>
+								<ul className="cd-secondary-dropdown is-hidden">
+									<li className="go-back"><a href="#0">Menu</a>
+									</li>
+									<li className="has-children">	<a href="#">fire + bulding safety</a>
+										<ul className="cd-secondary-dropdown is-hidden">
+											<li className="go-back"><a href="#0">Menu</a>
+											</li>
+											<li><a href="#">Environmental Consulting</a>
+											</li>
+											<li><a href="#">Government and Military</a>
+											</li>
+											<li><a href="#">Healthcare</a>
+											</li>
+											<li><a href="#">Historic Buildings & Museums</a>
+											</li>
+											<li><a href="#">Hospitality and Entertainment</a>
+											</li>
+										</ul>
+										{/* <!-- .cd-secondary-dropdown --> */}
+									</li>
+									{/* <!-- .has-children --> */}
+									<li className="has-children">	<a href="#">risk + hazards</a>
+										<ul className="cd-secondary-dropdown is-hidden">
+											<li className="go-back"><a href="#0">Menu</a>
+											</li>
+											<li><a href="#">Environmental Consulting</a>
+											</li>
+											<li><a href="#">Government and Military</a>
+											</li>
+											<li><a href="#">Healthcare</a>
+											</li>
+											<li><a href="#">Historic Buildings & Museums</a>
+											</li>
+											<li><a href="#">Hospitality and Entertainment</a>
+											</li>
+										</ul>
+										{/* <!-- .cd-secondary-dropdown --> */}
+									</li>
+									{/* <!-- .has-children --> */}
+									<li className="has-children">	<a href="#">emergency management & planning</a>
+										<ul className="cd-secondary-dropdown is-hidden">
+											<li className="go-back"><a href="#0">Menu</a>
+											</li>
+											<li><a href="#">Environmental Consulting</a>
+											</li>
+											<li><a href="#">Government and Military</a>
+											</li>
+											<li><a href="#">Healthcare</a>
+											</li>
+											<li><a href="#">Historic Buildings & Museums</a>
+											</li>
+											<li><a href="#">Hospitality and Entertainment</a>
+											</li>
+										</ul>
+										{/* <!-- .cd-secondary-dropdown --> */}
+									</li>
+									{/* <!-- .has-children --> */}
+									<li className="has-children">	<a href="#">security</a>
+										<ul className="cd-secondary-dropdown is-hidden">
+											<li className="go-back"><a href="#0">Menu</a>
+											</li>
+											<li><a href="#">Environmental Consulting</a>
+											</li>
+											<li><a href="#">Government and Military</a>
+											</li>
+											<li><a href="#">Healthcare</a>
+											</li>
+											<li><a href="#">Historic Buildings & Museums</a>
+											</li>
+											<li><a href="#">Hospitality and Entertainment</a>
+											</li>
+										</ul>
+										{/* <!-- .cd-secondary-dropdown --> */}
+									</li>
+									{/* <!-- .has-children --> */}
+									<li className="has-children">	<a href="#">forensics</a>
+										<ul className="cd-secondary-dropdown is-hidden">
+											<li className="go-back"><a href="#0">Menu</a>
+											</li>
+											<li><a href="#">Environmental Consulting</a>
+											</li>
+											<li><a href="#">Government and Military</a>
+											</li>
+											<li><a href="#">Healthcare</a>
+											</li>
+											<li><a href="#">Historic Buildings & Museums</a>
+											</li>
+											<li><a href="#">Hospitality and Entertainment</a>
+											</li>
+										</ul>
+										{/* <!-- .cd-secondary-dropdown --> */}
+									</li>
+									{/* <!-- .has-children --> */}
+									<li className="has-children">	<a href="#">training + software</a>
+										<ul className="cd-secondary-dropdown is-hidden">
+											<li className="go-back"><a href="#0">Menu</a>
+											</li>
+											<li><a href="#">Environmental Consulting</a>
+											</li>
+											<li><a href="#">Government and Military</a>
+											</li>
+											<li><a href="#">Healthcare</a>
+											</li>
+											<li><a href="#">Historic Buildings & Museums</a>
+											</li>
+											<li><a href="#">Hospitality and Entertainment</a>
+											</li>
+										</ul>
+										{/* <!-- .cd-secondary-dropdown --> */}
+									</li>
+									{/* <!-- .has-children --> */}
+								</ul>
+								{/* <!-- .cd-secondary-dropdown --> */}
+							</li>
+							{/* <!-- .has-children --> */}
+							<li className="has-children">	<a href="#">Blog</a>
+								<ul className="cd-secondary-dropdown icon_menu is-hidden">
+									<li className="go-back"><a href="#0">Menu</a>
+									</li>
+									<li><a href="blog_category.html">Blog-Category</a>
+									</li>
+									<li><a href="blog_single.html">Blog-Single</a>
+									</li>
+								</ul>
+							</li>
+							<li className="has-children">	<a href="#">Gallery</a>
+								<ul className="cd-secondary-dropdown icon_menu is-hidden">
+									<li className="go-back"><a href="#0">Menu</a>
+									</li>
+									<li><a href="gallery_III.html">Gallery-III</a>
+									</li>
+									<li><a href="gallery_IV.html">Gallery-IV</a>
+									</li>
+								</ul>
+							</li>
+							<li className="has-children">	<a href="#">Pages</a>
+								<ul className="cd-secondary-dropdown icon_menu is-hidden">
+									<li className="go-back"><a href="#0">Menu</a>
+									</li>
+									<li><a href="error.html">Error</a>
+								</li>
+								<li><a href="course.html">Course</a>
+								</li>
+								<li><a href="course_single.html">Course-Single</a>
+								</li>
+								<li><a href="service.html">Services</a>
+								</li>
+								<li><a href="teacher.html">Teacher</a>
+								</li>
+								<li><a href="teacher_single.html">Teacher-Single</a>
+								</li>
+								<li><a href="event.html">Event</a>
+								</li>
+								<li><a href="event_single.html">Event-Single</a>
+								</li>
+								<li><a href="login.html">Login</a>
+								</li>
+								<li><a href="register.html">Register</a>
+								</li>
+								</ul>
+							</li>
+							<li><a href="contact_us">Contact Us</a>
+							</li>
+						</ul>
+						{/* <!-- .cd-dropdown-content --> */}
+					</nav>
+					{/* <!-- .cd-dropdown --> */}
 				</div>
-			</div>
-			<div className="edu_message_dropbox_wrapper">
-				<div className="nice-select budge_noti_wrapper" tabindex="0">	<span className="current"><i className="flaticon-notification"></i></span>
-					<div className="budge_noti">4</div>
-					<ul className="list">
-						<li><a href="#">2 New Messages</a>
-						</li>
-						<li>
-							<div className="crm_mess_main_box_wrapper">
-								<div className="crm_mess_img_wrapper">
-									<img src="images/mess1.jpg" alt="img"/>
-								</div>
-								<div className="crm_mess_img_cont_wrapper">
-									<h4>Mr.Farhan <span>01:30PM</span></h4>
-									<p>I'm Leaving early</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div className="crm_mess_main_box_wrapper">
-								<div className="crm_mess_img_wrapper">
-									<img src="images/mess2.jpg" alt="img"/>
-								</div>
-								<div className="crm_mess_img_cont_wrapper">
-									<h4>Mr.ajay <span>01:30PM</span></h4>
-									<p>I'm Leaving early</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div className="crm_mess_main_box_wrapper">
-								<div className="crm_mess_img_wrapper">
-									<img src="images/mess3.jpg" alt="img"/>
-								</div>
-								<div className="crm_mess_img_cont_wrapper">
-									<h4>Mr.akshay <span>01:30PM</span></h4>
-									<p>I'm Leaving early</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div className="crm_mess_main_box_wrapper">
-								<div className="crm_mess_img_wrapper">
-									<img src="images/mess4.jpg" alt="img"/>
-								</div>
-								<div className="crm_mess_img_cont_wrapper">
-									<h4>Mr.john <span>01:30PM</span></h4>
-									<p>I'm Leaving early</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div className="crm_mess_all_main_box_wrapper">
-								<p><a href="#">See All</a>
-								</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div className="edu_seach_wrapper">
-				<div id="search_button">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_2" x="0px" y="0px" viewBox="0 0 451 451" style={{enableBackground: 'new 0 0 451 451'}} xmlSpace="preserve">
-						<g>
-							<path id="search" d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3   s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4   C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3   s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z" />
-						</g>
-					</svg>
-				</div>
-			</div>
+				{/* <!-- .cd-dropdown-wrapper --> */}
+			</header>
 		</div>
 	</div>
     )
-}
-export default function App() {
-  return (
-    <div>
-      <HeaderNav />
-    </div>
-  );
+} 
+
+export default function App(){
+    return(
+        <>
+            <HeaderNav2/>
+        </>
+    )
 }
