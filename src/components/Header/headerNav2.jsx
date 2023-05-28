@@ -1,5 +1,6 @@
 import React from "react";
-
+// import "./style/style_II.css";
+// import "./style/responsive_II.css"; 
 const HeaderNav2 = ()=>{
     return(
         <div className="edu_logo_header_wrapper float_left">
@@ -35,7 +36,7 @@ const HeaderNav2 = ()=>{
 							</ul>
 						</li>
 						{/* <!-- mega menu start --> */}
-						<li className="has-mega gc_main_navigation"><a href="about_us.html" className="gc_main_navigation hover_color">About Us</a>
+						<li className="has-mega gc_main_navigation"><a href="/about" className="gc_main_navigation hover_color">About Us</a>
 						</li>
 						<li className="has-mega gc_main_navigation kv_sub_menu">	<a href="#" className="gc_main_navigation hover_color">  Careers&nbsp; <i className="fas fa-angle-down"></i></a>
 							{/* <!-- mega menu start --> */}
@@ -275,18 +276,18 @@ const HeaderNav2 = ()=>{
 						</li>
 						<li className="has-mega gc_main_navigation"><a href="#" className="gc_main_navigation hover_color">  Blog&nbsp; <i className="fas fa-angle-down"></i></a>
 							<ul>
-								<li className="parent"><a href="blog_category.html">Blog-Category</a>
+								<li className="parent"><a href="/blog_category">Blog-Category</a>
 								</li>
-								<li className="parent"><a href="blog_single.html">Blog-Single</a>
+								<li className="parent"><a href="/blog_single">Blog-Single</a>
 								</li>
 							</ul>
 						</li>
 						{/* <!-- mega menu start --> */}
 						<li className="has-mega gc_main_navigation"><a href="#" className="gc_main_navigation hover_color">  Gallery&nbsp; <i className="fas fa-angle-down"></i></a>
 							<ul>
-								<li className="parent"><a href="gallery_III.html">Gallery-III</a>
+								<li className="parent"><a href="/gallery">Gallery-III</a>
 								</li>
-								<li className="parent"><a href="gallery_IV.html">Gallery-IV</a>
+								<li className="parent"><a href="/gallery2">Gallery-IV</a>
 								</li>
 							</ul>
 						</li>
@@ -294,32 +295,33 @@ const HeaderNav2 = ()=>{
 							<ul>
 								<li className="parent"><a href="error.html">Error</a>
 								</li>
-								<li className="parent"><a href="course.html">Course</a>
+								<li className="parent"><a href="/course">Course</a>
 								</li>
-								<li className="parent"><a href="course_single.html">Course-Single</a>
+								<li className="parent"><a href="/course_single">Course-Single</a>
 								</li>
-								<li className="parent"><a href="service.html">Services</a>
+								<li className="parent"><a href="/service">Services</a>
 								</li>
-								<li className="parent"><a href="teacher.html">Teacher</a>
+								<li className="parent"><a href="/teacher">Teacher</a>
 								</li>
-								<li className="parent"><a href="teacher_single.html">Teacher-Single</a>
+								<li className="parent"><a href="/teacher_single">Teacher-Single</a>
 								</li>
-								<li className="parent"><a href="event.html">Event</a>
+								<li className="parent"><a href="/event">Event</a>
 								</li>
-								<li className="parent"><a href="event_single.html">Event-Single</a>
+								<li className="parent"><a href="/event_single">Event-Single</a>
 								</li>
-								<li className="parent"><a href="login.html">Login</a>
+								<li className="parent"><a href="/login">Login</a>
 								</li>
-								<li className="parent"><a href="register.html">Register</a>
+								<li className="parent"><a href="/register">Register</a>
 								</li>
 							</ul>
 						</li>
-						<li className="has-mega gc_main_navigation"><a href="contact_us.html" className="gc_main_navigation hover_color">Contact Us</a>
+						<li className="has-mega gc_main_navigation"><a href="/contact_us" className="gc_main_navigation hover_color">Contact Us</a>
 						</li>
 					</ul>
 				</div>
 				{/* <!-- mainmenu end --> */}
 			</div>
+			
 			<header className="mobail_menu d-block d-sm-block d-md-block d-lg-none d-xl-none">
 				<div className="cd-dropdown-wrapper">
 					<a className="house_toggle" href="#0">	<i className="flaticon-menu"></i>
@@ -343,7 +345,7 @@ const HeaderNav2 = ()=>{
 									</li>
 								</ul>
 							</li>
-							<li><a href="about_us.html">About</a>
+							<li><a href="/about">About</a>
 							</li>
 							<li className="has-children">	<a href="#">Careers</a>
 								<ul className="cd-secondary-dropdown is-hidden">
@@ -465,9 +467,9 @@ const HeaderNav2 = ()=>{
 								<ul className="cd-secondary-dropdown icon_menu is-hidden">
 									<li className="go-back"><a href="#0">Menu</a>
 									</li>
-									<li><a href="blog_category.html">Blog-Category</a>
+									<li><a href="/blog_category">Blog-Category</a>
 									</li>
-									<li><a href="blog_single.html">Blog-Single</a>
+									<li><a href="/blog_single">Blog-Single</a>
 									</li>
 								</ul>
 							</li>
@@ -475,9 +477,9 @@ const HeaderNav2 = ()=>{
 								<ul className="cd-secondary-dropdown icon_menu is-hidden">
 									<li className="go-back"><a href="#0">Menu</a>
 									</li>
-									<li><a href="gallery_III.html">Gallery-III</a>
+									<li><a href="/gallery">Gallery-III</a>
 									</li>
-									<li><a href="gallery_IV.html">Gallery-IV</a>
+									<li><a href="/gallery2">Gallery-IV</a>
 									</li>
 								</ul>
 							</li>
@@ -487,27 +489,27 @@ const HeaderNav2 = ()=>{
 									</li>
 									<li><a href="error.html">Error</a>
 								</li>
-								<li><a href="course.html">Course</a>
+								<li><a href="/course">Course</a>
 								</li>
-								<li><a href="course_single.html">Course-Single</a>
+								<li><a href="/course_single">Course-Single</a>
 								</li>
-								<li><a href="service.html">Services</a>
+								<li><a href="/service">Services</a>
 								</li>
-								<li><a href="teacher.html">Teacher</a>
+								<li><a href="/teacher">Teacher</a>
 								</li>
-								<li><a href="teacher_single.html">Teacher-Single</a>
+								<li><a href="/teacher_single">Teacher-Single</a>
 								</li>
-								<li><a href="event.html">Event</a>
+								<li><a href="/event">Event</a>
 								</li>
-								<li><a href="event_single.html">Event-Single</a>
+								<li><a href="/event_single">Event-Single</a>
 								</li>
-								<li><a href="login.html">Login</a>
+								<li><a href="/login">Login</a>
 								</li>
-								<li><a href="register.html">Register</a>
+								<li><a href="/register">Register</a>
 								</li>
 								</ul>
 							</li>
-							<li><a href="contact_us">Contact Us</a>
+							<li><a href="/contact_us">Contact Us</a>
 							</li>
 						</ul>
 						{/* <!-- .cd-dropdown-content --> */}

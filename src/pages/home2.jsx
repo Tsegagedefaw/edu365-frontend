@@ -1,10 +1,11 @@
 import React from "react";
-import HeaderNav2 from "../components/header nav/headerNav2";
+import HeaderNav2 from "../components/Header/headerNav2";
 import Home2Slide from "../components/Slide/home2Slide";
 import FinderSection from "../components/Finder Section/finderSection";
 import History from "../components/history acadamy/history";
 import SchoolInfo from "../components/School Info/SchoolInfo";
 import PopularCourse from "../components/Popular Course/popular";
+import Counter from "../components/counter Number/counter";
 import SchoolGallery from "../components/School Gallery/SchoolGallery";
 import SpecialTeam from "../components/Special Team/SpecialTeam";
 import Blog from "../components/Blog/blog";
@@ -13,10 +14,7 @@ import Partners from "../components/Partners/Partners";
 import Signup from "../components/SignUp/Signup";
 import Footer from "../components/Footer/footer";
 
-// import "style_II.css";
-// import "css/responsive_II.css";
-
-const Home = () => {
+const Home2 = () => {
   return (
     <>
     <div id="preloader">
@@ -32,6 +30,7 @@ const Home = () => {
       <History/>
       <SchoolInfo/>
       <PopularCourse />
+      <Counter/>
       <SchoolGallery />
       <SpecialTeam />
       <Blog />
@@ -42,4 +41,4 @@ const Home = () => {
     </>
   );
 };
-export default Home;
+export default Home2;

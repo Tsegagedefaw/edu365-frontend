@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderNav from "../header nav/headerNav";
+import HeaderNav from "./headerNav";
 const MainHeader = () => {
   return (
     <div class="edu_logo_header_wrapper float_left">
@@ -8,17 +8,18 @@ const MainHeader = () => {
           <div class="col-md-12">
             <div class="edu_border_line">
               <div class="row">
-                <div class="col-md-3">
-                  <div class="edu_logo_main_wrapper">
-                    <a href="index.html">
-                      {/* <img src='../' />/home/tsega/edu365_code/src/asset/images/logo.png */}
-                      <img
-                        src="/home/tsega/edu365_code/src/asset/images/logo.png"
-                        alt="logo"
-                      />
-                    </a>
-                  </div>
-                </div>
+                
+                {/* <div class="col-md-3"> */}
+                  {/* <div class="edu_logo_main_wrapper"> */}
+                    {/* <a href="index.html"> */}
+                      {/* <img src='../' />/home/tsega/edu365_code/src/asset/images/logo.png  */}
+                      {/* <img */}
+                        {/* src="/home/tsega/edu365_code/src/asset/images/logo.png" */}
+                        {/* alt="logo" */}
+                      {/* /> */}
+                    {/* </a> */}
+                  {/* </div> */}
+                {/* </div>  */}
                 <div class="col-md-9 d-none d-sm-none d-md-block">
                   <div class="lv_share_info_wrapper">
                     <ul>

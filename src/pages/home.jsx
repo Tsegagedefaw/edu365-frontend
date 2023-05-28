@@ -1,8 +1,8 @@
 import React from "react";
-import TopHeader from "../components/top header/topHeader";
-import MainHeader from "../components/main header/mainHeader";
-import HeaderNav from "../components/header nav/headerNav";
-import MainSlide from "../components/Slide/mainSlide";
+import TopHeader from "../components/Header/topHeader";
+import MainHeader from "../components/Header/mainHeader";
+import HeaderNav from "../components/Header/headerNav";
+import MainSlide from "../components/Slide/home2Slide";
 import FinderSection from "../components/Finder Section/finderSection";
 import Service from "../components/School Service/service";
 import Counter from "../components/counter Number/counter";

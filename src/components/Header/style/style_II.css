@@ -1886,7 +1886,7 @@ header {
   background-position: center center;
   background-size: 40px 40px;
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-1::before {
+/* .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-1::before {
   background-image: url("../img/nucleo-icon-1.svg");
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-2::before {
@@ -1921,7 +1921,7 @@ header {
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-12::before {
   background-image: url("../img/nucleo-icon-12.svg");
-}
+} */
 @media only screen and (min-width: 1024px) {
   .cd-dropdown-content {
     /* reset mobile style */
@@ -2814,7 +2814,7 @@ header {
 .slider-area .carousel-inner .carousel-item .caption-1 {
   width:100%;
   height:100%;
-  background: url(../images/school/slide1.jpg) 50% 0 repeat-y;
+  background: url(../../../../public/images/school/slide1.jpg) 50% 0 repeat-y;
    background-position: center 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2824,7 +2824,7 @@ header {
 .slider-area .carousel-inner .carousel-item .caption-2 {
 width:100%;
   height:100%;
-  background: url(../images/school/slide2.jpg);
+  background: url(../../../../public/images/school/slide2.jpg);
    background-position: center 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2834,7 +2834,7 @@ width:100%;
 .slider-area .carousel-inner .carousel-item .caption-3 {
 width:100%;
   height:100%;
-  background: url(../images/school/slide3.jpg);
+  background: url(../../../../public/images/school/slide3.jpg);
    background-position: center 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3399,7 +3399,7 @@ width:100%;
 /*-- edu books wrapper End --*/
 /*-- edu counter wrapper Start --*/
 .edu_counter_main_section_wrapper{
-	background:url('../images/counto.jpg') 50% 0 repeat-y;
+	background:url('../../../../public/images/counto.jpg') 50% 0 repeat-y;
 	background-position:center 0;
 	background-size:cover;
 	height:100%;
@@ -4530,7 +4530,7 @@ width:100%;
     background-color: rgba(10, 15, 28, 0.7);
 }
 .page_title_section{
-	background: url(../images/inner_page.jpg) 50% 0 repeat-y;
+	background: url(../../../../public/images/inner_page.jpg) 50% 0 repeat-y;
     float: left;
     width: 100%;
     height: 100%;

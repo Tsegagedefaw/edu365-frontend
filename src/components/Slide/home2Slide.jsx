@@ -1,5 +1,6 @@
 import React from "react";
-
+import "../Header/style/style_II.css";
+import "../Header/style/responsive_II.css"; 
 const Home2Slide = ()=>{
     return(
         <div className="slider-area">
