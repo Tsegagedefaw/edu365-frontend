@@ -1,6 +1,10 @@
 import React from "react";
+import {useState} from "react";
 
+import {Blogs} from "../../data/home";
 const Blog = ()=>{
+    const [blog,setBlog] = useState(Blogs);
+
     return(
         <div className="edu_blog_main_wrapper float_left">
         <div className="container">
@@ -12,72 +16,33 @@ const Blog = ()=>{
                             <br/>interdum maximus, ligula nulla pretium ligula, a egestas ex nibh.</p>
                     </div>
                 </div>
-                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                {
+                    blog && blog.map((blogs)=>(
+                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="edu_blog_main_box float_left">
                         <div className="edu_blog_label">
                             <p>Latest</p>
                         </div>
                         <div className="edu_blog_date float_left">
-                            <p>Febuary 14, 2019</p>
+                            <p>{blogs.date}</p>
                         </div>
                         <div className="edu_blog_img_wrapper float_left">
-                            <img src="images/blog_01.jpg" alt="img"/>
+                            <img src={blogs.image} alt="img"/>
                         </div>
                         <div className="edu_blog_img_content_wrapper float_left">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.</p>
+                            <p>{blogs.text}</p>
                             <ul>
-                                <li><a href="#"><i className="far fa-eye"></i> &nbsp;78 View</a>
+                                <li><a href="#"><i className="far fa-eye"></i> &nbsp;{blogs.view} View</a>
                                 </li>
-                                <li><a href="#"><i className="fas fa-heart"></i> &nbsp;05 Like</a>
+                                <li><a href="#"><i className="fas fa-heart"></i> &nbsp;{blogs.love} Like</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div className="edu_blog_main_box float_left">
-                        <div className="edu_blog_label">
-                            <p>Latest</p>
-                        </div>
-                        <div className="edu_blog_date float_left">
-                            <p>Febuary 14, 2019</p>
-                        </div>
-                        <div className="edu_blog_img_wrapper float_left">
-                            <img src="images/blog_02.jpg" alt="img"/>
-                        </div>
-                        <div className="edu_blog_img_content_wrapper float_left">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.</p>
-                            <ul>
-                                <li><a href="#"><i className="far fa-eye"></i> &nbsp;78 View</a>
-                                </li>
-                                <li><a href="#"><i className="fas fa-heart"></i> &nbsp;05 Like</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div className="edu_blog_main_box float_left">
-                        <div className="edu_blog_label">
-                            <p>Latest</p>
-                        </div>
-                        <div className="edu_blog_date float_left">
-                            <p>Febuary 14, 2019</p>
-                        </div>
-                        <div className="edu_blog_img_wrapper float_left">
-                            <img src="images/blog_03.jpg" alt="img"/>
-                        </div>
-                        <div className="edu_blog_img_content_wrapper float_left">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.</p>
-                            <ul>
-                                <li><a href="#"><i className="far fa-eye"></i> &nbsp;78 View</a>
-                                </li>
-                                <li><a href="#"><i className="fas fa-heart"></i> &nbsp;05 Like</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                    ))
+                }
+                
                 <div className="col-md-12">
                     <div className="edu_bottom_btn_wrapper float_left"> <a href="#">View All</a>
                     </div>

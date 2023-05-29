@@ -1,87 +1,66 @@
 import React from "react";
+import {useState} from "react"
 
+import {Blogs} from "../../data/home";
+import { TagsCloud } from "../../data/home";
 const BlogMainSection = ()=>{
+
+	const [blog,setBlog] = useState(Blogs);
     return(
         <div className="blog_wrapper float_left">
 		<div className="container">
 			<div className="row">
 				<div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+				{ blog && blog.map((blogs)=>
 					<div className="blog-post-wrapper iner_blog">
-						<div className="post-thumbnail">
-							<img src="images/blog_s1.jpg" className="img-responsive " alt="Image"/>
-						</div>
-						{/* <!-- /.post-thumbnail --> */}
-						<div className="blog-content">
-							<header className="entry-header">
-								<div className="entry-meta">
-									<ul>
-										<li><i className="fa fa-user" aria-hidden="true"></i>  <a href="#">author</a>
-										</li>
-										<li><i className="fa fa-calendar" aria-hidden="true"></i>  <a href="#">sept 19, 2019</a>
-										</li>
-										<li><i className="fa fa-heart"></i><a href="#">39</a>
-										</li>
-										<li><a href="#"><i className="far fa-eye"></i>25</a>
-										</li>
-									</ul>
-								</div>
-								<h4 className="entry-title"><a href="#">How to Become Master In CSS Week.</a></h4>
-							</header>
-							{/* <!-- /.entry-header --> */}
-							<div className="entry-content">
-								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
-							</div> <a href="#" className="blog_read">read more <i className="fa fa-angle-double-right" aria-hidden="true"></i></a>
-							{/* <!-- /.entry-content --> */}
-						</div>
-						{/* <!-- /.blog-content --> */}
-					</div>
-					<div className="blog-post-wrapper iner_blog">
-						<div className="post-thumbnail">
-							<div id="blogoneSlider" className="carousel slide" data-ride="carousel">
-								{/* <!-- Wrapper for slides --> */}
-								<div className="carousel-inner" role="listbox">
-									<div className="carousel-item active">
-										<img src="images/blog_s2.jpg" className="img-responsive " alt="Image"/>
+							<div className="post-thumbnail">
+								<div id="blogoneSlider" className="carousel slide" data-ride="carousel">
+									{/* <!-- Wrapper for slides --> */}
+									<div className="carousel-inner" role="listbox">
+										{blogs.image.map((img)=>(<div className="carousel-item active">
+											<img src={img} className="img-responsive " alt="Image"/>
+										</div>))}
+										{/* <div className="carousel-item">
+											<img src="images/blog_s3.jpg" className="img-responsive " alt="Image"/>
+										</div> */}
 									</div>
-									<div className="carousel-item">
-										<img src="images/blog_s3.jpg" className="img-responsive " alt="Image"/>
+									{/* <!-- Controls --> */}
+									<a className="left carousel-control" href="#blogoneSlider" role="button" data-slide="prev"> <i className="flaticon-left-arrow" aria-hidden="true"></i>
+										<span className="sr-only">Previous</span>
+									</a>
+									<a className="right carousel-control" href="#blogoneSlider" role="button" data-slide="next"> <i className="flaticon-right-arrow" aria-hidden="true"></i>
+										<span className="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
+							{/* <!-- /.post-thumbnail --> */}
+							<div className="blog-content">
+								<header className="entry-header">
+									<div className="entry-meta">
+										<ul>
+											<li><i className="fa fa-user" aria-hidden="true"></i>  <a href="#">{blogs.author}</a>
+											</li>
+											<li><i className="fa fa-calendar" aria-hidden="true"></i>  <a href="#">{blogs.date}</a>
+											</li>
+											<li><i className="fa fa-heart"></i><a href="#">{blogs.love}</a>
+											</li>
+											<li><a href="#"><i className="far fa-eye"></i>{blogs.view}</a>
+											</li>
+										</ul>
 									</div>
+									<h4 className="entry-title"><a href="#">{blogs.title}</a></h4>
+								</header>
+								{/* <!-- /.entry-header --> */}
+								<div className="entry-content">
+									<p>{blogs.text}</p> <a href="#" className="blog_read">read more <i className="fa fa-angle-double-right" aria-hidden="true"></i></a>
 								</div>
-								{/* <!-- Controls --> */}
-								<a className="left carousel-control" href="#blogoneSlider" role="button" data-slide="prev"> <i className="flaticon-left-arrow" aria-hidden="true"></i>
-									<span className="sr-only">Previous</span>
-								</a>
-								<a className="right carousel-control" href="#blogoneSlider" role="button" data-slide="next"> <i className="flaticon-right-arrow" aria-hidden="true"></i>
-									<span className="sr-only">Next</span>
-								</a>
+								{/* <!-- /.entry-content --> */}
 							</div>
+							{/* <!-- /.blog-content --> */}
 						</div>
-						{/* <!-- /.post-thumbnail --> */}
-						<div className="blog-content">
-							<header className="entry-header">
-								<div className="entry-meta">
-									<ul>
-										<li><i className="fa fa-user" aria-hidden="true"></i>  <a href="#">author</a>
-										</li>
-										<li><i className="fa fa-calendar" aria-hidden="true"></i>  <a href="#">sept 19, 2019</a>
-										</li>
-										<li><i className="fa fa-heart"></i><a href="#">39</a>
-										</li>
-										<li><a href="#"><i className="far fa-eye"></i>25</a>
-										</li>
-									</ul>
-								</div>
-								<h4 className="entry-title"><a href="#">Students work together to solve a problem</a></h4>
-							</header>
-							{/* <!-- /.entry-header --> */}
-							<div className="entry-content">
-								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p> <a href="#" className="blog_read">read more <i className="fa fa-angle-double-right" aria-hidden="true"></i></a>
-							</div>
-							{/* <!-- /.entry-content --> */}
-						</div>
-						{/* <!-- /.blog-content --> */}
-					</div>
-					<div className="blog_dark_wrapper float_left"> <a href="#"><i className="fas fa-link"></i></a>
+				)}
+					
+					{/* <div className="blog_dark_wrapper float_left"> <a href="#"><i className="fas fa-link"></i></a>
 						<h1>Click Latest Event on Wednesday 06 July, 2016</h1>
 						<div className="port-single-entry-meta">
 							<ul>
@@ -90,37 +69,7 @@ const BlogMainSection = ()=>{
 								</li>
 							</ul>
 						</div>
-					</div>
-					<div className="blog-post-wrapper iner_blog">
-						<div className="post-thumbnail">
-							<img src="images/blog_s4.jpg" className="img-responsive " alt="Image"/>
-						</div>
-						{/* <!-- /.post-thumbnail --> */}
-						<div className="blog-content">
-							<header className="entry-header">
-								<div className="entry-meta">
-									<ul>
-										<li><i className="fa fa-user" aria-hidden="true"></i>  <a href="#">author</a>
-										</li>
-										<li><i className="fa fa-calendar" aria-hidden="true"></i>  <a href="#">sept 19, 2019</a>
-										</li>
-										<li><i className="fa fa-heart"></i><a href="#">39</a>
-										</li>
-										<li><a href="#"><i className="far fa-eye"></i>25</a>
-										</li>
-									</ul>
-								</div>
-								{/* <!-- /.entry-meta --> */}
-								<h4 className="entry-title"><a href="#">Research of Learn training process</a></h4>
-							</header>
-							{/* <!-- /.entry-header --> */}
-							<div className="entry-content">
-								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
-							</div> <a href="#" className="blog_read">read more <i className="fa fa-angle-double-right" aria-hidden="true"></i></a>
-							{/* <!-- /.entry-content --> */}
-						</div>
-						{/* <!-- /.blog-content --> */}
-					</div>
+					</div> */}
 				</div>
 				<div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 right_sidebar blog_single_sidebar">
 					<div className="sidebar_widget float_left">
@@ -139,33 +88,16 @@ const BlogMainSection = ()=>{
 						<div className="widget_heading">
 							<h2>latest post</h2>
 						</div>
-						<div className="blog_wrapper22 float_left">
+						{ blog && blog.map((blogs)=>(<div className="blog_wrapper22 float_left">
 							<div className="blog_image">
-								<img src="images/blog1.jpg" className="img-responsive" alt="blog_img1" />
+								<img src={blogs.image} className="img-responsive" width={'80px'} height={'70px'} alt="blog_img1" />
 							</div>
 							<div className="blog_text">
-								<h5><a href="#">How to Become Master In CSS within qa Week.</a></h5>
-								<div className="blog_date">June 28, 2018-19</div>
+								<h5><a href="#">{blogs.title}</a></h5>
+								<div className="blog_date">{blogs.date}</div>
 							</div>
-						</div>
-						<div className="blog_wrapper22 float_left">
-							<div className="blog_image">
-								<img src="images/blog2.jpg" className="img-responsive" alt="blog_img2" />
-							</div>
-							<div className="blog_text">
-								<h5><a href="#">Connecting volunteers & nonprofitsz worldwide.</a></h5>
-								<div className="blog_date">June 28, 2018-19</div>
-							</div>
-						</div>
-						<div className="blog_wrapper22 float_left">
-							<div className="blog_image">
-								<img src="images/blog3.jpg" className="img-responsive" alt="blog_img3" />
-							</div>
-							<div className="blog_text">
-								<h5><a href="#">Research of Learn training process </a></h5>
-								<div className="blog_date">June 28, 2018-19</div>
-							</div>
-						</div>
+						</div>))}
+						
 					</div>
 					<div className="sidebar_widget float_left">
 						<div className="widget_heading">
@@ -173,32 +105,9 @@ const BlogMainSection = ()=>{
 						</div>
 						<div className="sidebar_tag_cloud">
 							<ul>
-								<li><a href="#">business </a>
-								</li>
-								<li><a href="#">html</a>
-								</li>
-								<li><a href="#">PSD</a>
-								</li>
-								<li><a href="#">corporate </a>
-								</li>
-								<li><a href="#">customer</a>
-								</li>
-								<li><a href="#">money</a>
-								</li>
-								<li><a href="#">webstrot</a>
-								</li>
-								<li><a href="#">services</a>
-								</li>
-								<li><a href="#">joomla</a>
-								</li>
-								<li><a href="#">skils</a>
-								</li>
-								<li><a href="#">prices</a>
-								</li>
-								<li><a href="#">partners</a>
-								</li>
-								<li><a href="#">wordpress</a>
-								</li>
+								{TagsCloud && TagsCloud.map((tag)=>(
+								<li><a href="#">{tag} </a>
+								</li>))}
 							</ul>
 						</div>
 					</div>

@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
 
-import Services from "../../data/home";
+import {HomeService} from "../../data/home";
 const Service = ()=>{
-    const [service, setService] = useState(Services);
+    const [service, setService] = useState(HomeService);
     return(
         <div class="edu_books_main_wrapper float_left">
         <div class="container">
@@ -15,7 +15,7 @@ const Service = ()=>{
                             <br/>interdum maximus, ligula nulla pretium ligula, a egestas ex nibh.</p>
                     </div>
                 </div>
-                {service.map((serviceData)=>(
+                {service.slice(0,4).map((serviceData)=>(
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                         <figure class='book'>
                             {/* <!-- Front --> */}
