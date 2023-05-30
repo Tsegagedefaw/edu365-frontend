@@ -18,7 +18,7 @@ const Blog = ()=>{
                 </div>
                 {
                     blog && blog.map((blogs)=>(
-                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div key={blogs.id} className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="edu_blog_main_box float_left">
                         <div className="edu_blog_label">
                             <p>Latest</p>
@@ -44,7 +44,7 @@ const Blog = ()=>{
                 }
                 
                 <div className="col-md-12">
-                    <div className="edu_bottom_btn_wrapper float_left"> <a href="#">View All</a>
+                    <div className="edu_bottom_btn_wrapper float_left"> <a href="/blog_category">View All</a>
                     </div>
                 </div>
             </div>

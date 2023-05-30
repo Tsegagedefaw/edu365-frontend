@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Count } from "../../data/home";
 const Counter = ()=>{
     return(
         <div class="edu_counter_main_section_wrapper float_left">
@@ -7,38 +7,15 @@ const Counter = ()=>{
         <section class="counter-section section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 icon3">
+                    {Count && Count.map((counts)=>(
+                    <div key={counts.id} class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 icon3">
                         <div class="icon">
-                            <img src="images/c1.png" alt="img"/>
+                            <img src={counts.icon} alt="img"/>
                         </div>
-                        <div class="count-description"> <span class="timer">2540</span>
-                            <h5 class="con1">Enrolled Students</h5>
+                        <div class="count-description"> <span class="timer">{counts.number}</span>
+                            <h5 class="con1">{counts.title}</h5>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 icon3">
-                        <div class="icon">
-                            <img src="images/c2.png" alt="img"/>
-                        </div>
-                        <div class="count-description"> <span class="timer">7325</span>
-                            <h5 class="con1">Passed Graduates</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 icon2">
-                        <div class="icon">
-                            <img src="images/c3.png" alt="img"/>
-                        </div>
-                        <div class="count-description"> <span class="timer">1924</span>
-                            <h5 class="con1">Courses Published</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 icon2">
-                        <div class="icon">
-                            <img src="images/c4.png" alt="img"/>
-                        </div>
-                        <div class="count-description"> <span class="timer">4275</span>
-                            <h5 class="con1">Award Winning</h5>
-                        </div>
-                    </div>
+                    </div>))}
                 </div>
             </div>
         </section>

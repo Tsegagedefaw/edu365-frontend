@@ -1,5 +1,5 @@
 import React from "react";
-
+import { User } from "../../data/home";
 const SpecialTeam = ()=>{
     return(
         <div className="edu_team_main_wrapper float_left">
@@ -12,10 +12,10 @@ const SpecialTeam = ()=>{
                             <br/>interdum maximus, ligula nulla pretium ligula, a egestas ex nibh.</p>
                     </div>
                 </div>
-                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 self_align_center">
-                    <div className="edu_team_main_box">
-                        <h3><a href="#">Jacklen Fandores</a></h3>
-                        <p>Web Designer</p>
+                {User&&User.slice(0,4).map((users)=>(<div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 self_align_center">
+                    <div key={users.id} className="edu_team_main_box">
+                        <h3><a href="#">{users.name}</a></h3>
+                        <p>{users.title}</p>
                         <ul>
                             <li><a href="#"><i className="fab fa-facebook-f"></i></a>
                             </li>
@@ -27,69 +27,12 @@ const SpecialTeam = ()=>{
                             </li>
                         </ul>
                         <div className="edu_team_inner_box">
-                            <img src="images/it1.jpg" alt="img"/>
+                            <img src={users.image} alt="img"/>
                         </div>
                     </div>
-                </div>
-                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 self_align_center">
-                    <div className="edu_team_main_box">
-                        <h3><a href="#">Jacklen Fandores</a></h3>
-                        <p>Web Designer</p>
-                        <ul>
-                            <li><a href="#"><i className="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li><a href="#"><i className="fab fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i className="fab fa-youtube"></i></a>
-                            </li>
-                            <li><a href="#"><i className="fab fa-linkedin-in"></i></a>
-                            </li>
-                        </ul>
-                        <div className="edu_team_inner_box">
-                            <img src="images/it2.jpg" alt="img"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 self_align_center">
-                    <div className="edu_team_main_box">
-                        <h3><a href="#">Jacklen Fandores</a></h3>
-                        <p>Web Designer</p>
-                        <ul>
-                            <li><a href="#"><i className="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li><a href="#"><i className="fab fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i className="fab fa-youtube"></i></a>
-                            </li>
-                            <li><a href="#"><i className="fab fa-linkedin-in"></i></a>
-                            </li>
-                        </ul>
-                        <div className="edu_team_inner_box">
-                            <img src="images/it3.jpg" alt="img"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 self_align_center">
-                    <div className="edu_team_main_box">
-                        <h3><a href="#">Jacklen Fandores</a></h3>
-                        <p>Web Designer</p>
-                        <ul>
-                            <li><a href="#"><i className="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li><a href="#"><i className="fab fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i className="fab fa-youtube"></i></a>
-                            </li>
-                            <li><a href="#"><i className="fab fa-linkedin-in"></i></a>
-                            </li>
-                        </ul>
-                        <div className="edu_team_inner_box">
-                            <img src="images/it4.jpg" alt="img"/>
-                        </div>
-                    </div>
-                </div>
+                </div>))}
                 <div className="col-md-12">
-                    <div className="edu_bottom_btn_wrapper float_left"> <a href="#">View All</a>
+                    <div className="edu_bottom_btn_wrapper float_left"> <a href="/gallery2">View All</a>
                     </div>
                 </div>
             </div>

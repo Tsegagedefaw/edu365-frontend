@@ -1,7 +1,13 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const CourseSingleSection = ()=>{
-    return(
+
+	const location = useLocation();
+	const data = location.state;
+	console.log(data);
+
+	return(
         <>
 <div className="page_title_section float_left">
 		<div className="page_header">
@@ -31,7 +37,7 @@ const CourseSingleSection = ()=>{
 				<div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
 					<div className="blog-post-wrapper iner_blog">
 						<div className="post-thumbnail">
-							<img src="images/blog_single.jpg" className="img-responsive " alt="Image"/>
+							<img src={data.image} style={{maxHeight:'400px'}} className="img-responsive " alt="Image"/>
 						</div>
 						{/* <!-- /.post-thumbnail --> */}
 						<div className="row">
@@ -40,7 +46,7 @@ const CourseSingleSection = ()=>{
 									<div className="single_course_categories_box">	<i className="fa fa-graduation-cap"></i>
 									</div>
 									<div className="single_course_box_content">
-										<p>Graphic & UI Designer</p>
+										<p>{data.title}</p>
 										<h4><b>Lilton Fandores</b></h4>
 									</div>
 								</div>
@@ -51,7 +57,7 @@ const CourseSingleSection = ()=>{
 									</div>
 									<div className="single_course_box_content">
 										<p>Course Start Date</p>
-										<h4><b>April 22 2016</b></h4>
+										<h4><b>{data.StartDate}</b></h4>
 									</div>
 								</div>
 							</div>
@@ -61,7 +67,7 @@ const CourseSingleSection = ()=>{
 									</div>
 									<div className="single_course_box_content">
 										<p>Course Duration</p>
-										<h4><b>2 Months 5 hrs</b></h4>
+										<h4><b>{data.courseDuration}</b></h4>
 									</div>
 								</div>
 							</div>
@@ -71,7 +77,7 @@ const CourseSingleSection = ()=>{
 									</div>
 									<div className="single_course_box_content">
 										<p>Language</p>
-										<h4><b>English</b></h4>
+										<h4><b>{data.language}</b></h4>
 									</div>
 								</div>
 							</div>
@@ -90,7 +96,7 @@ const CourseSingleSection = ()=>{
 									</div>
 									<div className="single_course_box_content">
 										<p>Price</p>
-										<h4><b>240$</b></h4>
+										<h4><b>{data.price}</b></h4>
 									</div>
 								</div>
 							</div>
@@ -98,12 +104,12 @@ const CourseSingleSection = ()=>{
 								<div className="edu_bottom_btn_wrapper float_left">	<a href="#">Join Now</a>
 								</div>
 								<div className="course_second_content_wrapper float_left">
-									<h4><b>Description Graphic & Web Design</b></h4>
-									<p>Mauris mattis lorem sit amet elit dictum aliquet. Fusce vel blandit nisl, vel rhoncus nisi. Aliquam scelerisque sapien sagittis pellentesque mollis, ipsum velit lobortis velit, vel pharetra quam nunc.</p>
+									<h4><b>Description {data.title}</b></h4>
+									<p>{data.discription}</p>
 								</div>
 								<div className="course_third_content_wrapper float_left">
 									<h4><b>What You Will Learn</b></h4>
-									<p>Nulla erat quam, rhoncus sit amet neque nec, pulvinar euismod tortor. Pellentesque id nunc vitae risus sagittis facilisis sit amet faucibus tortor. Etiam ornare urna in ligula interdum sagittis gravida ut odio. Sed dignissim turpis id auctor rutrum. Nullam eu hendrerit eros, ut lobortis erat.
+									<p>{data.discription}
 										<br/>
 										<br/>Morbi bibendum quis lectus nec gravida. Donec bibendum viverra urna a euismod. Nam eget nunc tortor. Integer odio purus, elementum vel auctor in, tincidunt nec est. Sed et felis imperdiet, laoreet lacus in, faucibus eros. Ut quis vulputate dolor, in sagittis nulla. Etiam at pretium magna.</p>
 								</div>

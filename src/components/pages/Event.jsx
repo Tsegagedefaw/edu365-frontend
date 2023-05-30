@@ -1,4 +1,4 @@
-import React from "react";
+	import React from "react";
 import { useState } from "react";
 
 import {Events} from "../../data/home";
@@ -6,16 +6,16 @@ import {Events} from "../../data/home";
 const EventSection = ()=>{
 	
 	const [allevent, setAllEvent] = useState(Events);
-	const [events,setEvents] = useState ['All','Happening','Upcoming','Expired']
+	const [events,setEvents] = useState (['All','Happening','Upcoming','Expired']);
 	
 	console.log(allevent)
 	const funcEvent = (event)=>{
 		console.log(event)
-		// if(event === 'All'){
-        //     setEvents(Event);
-        // }else{
-		// 	setEvents(Event.filter(events => events.type === event));
-        // }
+		if(event === 'All'){
+            setAllEvent(Events);
+        }else{
+			setAllEvent(Events.filter(events => events.type === event));
+        }
 	}
 
     return(

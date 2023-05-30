@@ -445,3 +445,26 @@ export const Events = [
     type: "Expired",
   },
 ];
+export const Count = [
+  {
+    id:1,
+    number:2000,
+    icon:'images/c1.png',
+    title:'Enrolled Students'
+  },{
+    id:2,
+    number:7325,
+    icon:'images/c2.png',
+    title:'Passed Graduates'
+  },{
+    id:3,
+    number:1924,
+    icon:'images/c3.png',
+    title:'Courses Published'
+  },{
+    id:4,
+    number:4275,
+    icon:'images/c4.png',
+    title:'Award Winning'
+  },
+]

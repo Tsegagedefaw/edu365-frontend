@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import {CourseData} from "../../data/home";
 
@@ -51,7 +52,7 @@ const Course = ()=>{
 								<h4>Start Date : <span>{courseData.setCourse}</span></h4>
 								<h3><a href="#">{courseData.title}</a></h3>
 								<p>{courseData.description}</p>
-								<h5><a href="#">Join Now</a></h5>
+								<h5><Link to="/course_single" state={courseData}>Join Now</Link></h5>
 							</div>
 						</div>
 					</div>
