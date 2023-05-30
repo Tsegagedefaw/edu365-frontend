@@ -1,6 +1,23 @@
 import React from "react";
+import { useState } from "react";
+
+import {Events} from "../../data/home";
 
 const EventSection = ()=>{
+	
+	const [allevent, setAllEvent] = useState(Events);
+	const [events,setEvents] = useState ['All','Happening','Upcoming','Expired']
+	
+	console.log(allevent)
+	const funcEvent = (event)=>{
+		console.log(event)
+		// if(event === 'All'){
+        //     setEvents(Event);
+        // }else{
+		// 	setEvents(Event.filter(events => events.type === event));
+        // }
+	}
+
     return(
        <>
        <div className="page_title_section float_left">
@@ -41,23 +58,24 @@ const EventSection = ()=>{
 							<li>
 								<div className="slider"></div>
 							</li>
-							<li role="presentation" className="active"><a href="#All" role="tab" data-toggle="tab">Happening</a>
+							{events&&events.map((event)=>(
+							<li key={event.id} role="presentation" className="active"><a onClick={()=>funcEvent(event)} href="#" role="tab" data-toggle="tab">{event}</a>
 							</li>
-							<li role="presentation"><a href="#html" role="tab" data-toggle="tab">Upcoming</a>
-							</li>
-							<li role="presentation" className=""><a href="#psd" role="tab" data-toggle="tab">Expired </a>
-							</li>
+							))}
+							
 						</ul>
 					</div>
 				</div>
 				<div className="col-md-12">
 					<div className="tab-content">
-						<div id="All" className="tab-pane active" role="tabpanel">
+						
+							<div className="tab-pane active" role="tabpanel">
 							<div className="row">
+								{allevent&&allevent.map((event)=>(
 								<div className="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
 									<div className="edu_slide_tab_box float_left">
 										<div className="edu_slide_tabs_img_box edu_slide_tabs_img_box_event float_left">
-											<img src="images/pc1.jpg" alt="img"/>
+											<img src={event.image} alt="img"/>
 											<div className="edu_tabs_label edu_tabs_label_event_wrapper">
 												<p className="edu_tabs_label_event">OCT</p>
 												<div className="edu_tabs_label_inner">
@@ -66,118 +84,18 @@ const EventSection = ()=>{
 											</div>
 										</div>
 										<div className="edu_slide_tabs_img_cont_box edu_slide_tabs_img_cont_box_event float_left">
-											<h4>Start Date : <span>Aug 28, 2019</span></h4>
-											<h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.</p>
+											<h4>Start Date : <span>{event.startDate}</span></h4>
+											<h3><a href="#">{event.title}</a></h3>
+											<p>{event.description}</p>
 											<h5><a href="#">Join Now</a></h5>
 										</div>
 									</div>
 								</div>
-								<div className="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
-									<div className="edu_slide_tab_box edu_slide_tab_box_event_single float_left">
-										<div className="edu_slide_tabs_img_box edu_slide_tabs_img_box_event float_left">
-											<img src="images/pc1.jpg" alt="img"/>
-											<div className="edu_tabs_label edu_tabs_label_event_wrapper">
-												<p className="edu_tabs_label_event">OCT</p>
-												<div className="edu_tabs_label_inner">
-													<p>31</p>
-												</div>
-											</div>
-										</div>
-										<div className="edu_slide_tabs_img_cont_box edu_slide_tabs_img_cont_box_event float_left">
-											<h4>Start Date : <span>Aug 28, 2019</span></h4>
-											<h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.</p>
-											<h5><a href="#">Join Now</a></h5>
-										</div>
-									</div>
-								</div>
-								<div className="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
-									<div className="edu_slide_tab_box edu_slide_tab_box_event_single float_left">
-										<div className="edu_slide_tabs_img_box edu_slide_tabs_img_box_event float_left">
-											<img src="images/pc1.jpg" alt="img"/>
-											<div className="edu_tabs_label edu_tabs_label_event_wrapper">
-												<p className="edu_tabs_label_event">OCT</p>
-												<div className="edu_tabs_label_inner">
-													<p>31</p>
-												</div>
-											</div>
-										</div>
-										<div className="edu_slide_tabs_img_cont_box edu_slide_tabs_img_cont_box_event float_left">
-											<h4>Start Date : <span>Aug 28, 2019</span></h4>
-											<h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.</p>
-											<h5><a href="#">Join Now</a></h5>
-										</div>
-									</div>
-								</div>
+								))}
 							</div>
 						</div>
-						<div id="html" className="tab-pane fade" role="tabpanel">
-							<div className="row">
-								<div className="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
-									<div className="edu_slide_tab_box float_left">
-										<div className="edu_slide_tabs_img_box edu_slide_tabs_img_box_event float_left">
-											<img src="images/pc1.jpg" alt="img"/>
-											<div className="edu_tabs_label edu_tabs_label_event_wrapper">
-												<p className="edu_tabs_label_event">OCT</p>
-												<div className="edu_tabs_label_inner">
-													<p>31</p>
-												</div>
-											</div>
-										</div>
-										<div className="edu_slide_tabs_img_cont_box edu_slide_tabs_img_cont_box_event float_left">
-											<h4>Start Date : <span>Aug 28, 2019</span></h4>
-											<h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.</p>
-											<h5><a href="#">Join Now</a></h5>
-										</div>
-									</div>
-								</div>
-								<div className="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
-									<div className="edu_slide_tab_box edu_slide_tab_box_event_single float_left">
-										<div className="edu_slide_tabs_img_box edu_slide_tabs_img_box_event float_left">
-											<img src="images/pc1.jpg" alt="img"/>
-											<div className="edu_tabs_label edu_tabs_label_event_wrapper">
-												<p className="edu_tabs_label_event">OCT</p>
-												<div className="edu_tabs_label_inner">
-													<p>31</p>
-												</div>
-											</div>
-										</div>
-										<div className="edu_slide_tabs_img_cont_box edu_slide_tabs_img_cont_box_event float_left">
-											<h4>Start Date : <span>Aug 28, 2019</span></h4>
-											<h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.</p>
-											<h5><a href="#">Join Now</a></h5>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="psd" className="tab-pane fade" role="tabpanel">
-							<div className="row">
-								<div className="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
-									<div className="edu_slide_tab_box float_left">
-										<div className="edu_slide_tabs_img_box edu_slide_tabs_img_box_event float_left">
-											<img src="images/pc1.jpg" alt="img"/>
-											<div className="edu_tabs_label edu_tabs_label_event_wrapper">
-												<p className="edu_tabs_label_event">OCT</p>
-												<div className="edu_tabs_label_inner">
-													<p>31</p>
-												</div>
-											</div>
-										</div>
-										<div className="edu_slide_tabs_img_cont_box edu_slide_tabs_img_cont_box_event float_left">
-											<h4>Start Date : <span>Aug 28, 2019</span></h4>
-											<h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.</p>
-											<h5><a href="#">Join Now</a></h5>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						
+						
 					</div>
 				</div>
 			</div>

@@ -326,65 +326,122 @@ export const Gallery = [
 ];
 export const User = [
   {
-    id:1,
-    name:"Jacklen Fandores",
-    title:"Web Designer",
-    image:"images/team1.jpg"
+    id: 1,
+    name: "Jacklen Fandores",
+    title: "Web Designer",
+    image: "images/team1.jpg",
   },
   {
-    id:2,
-    name:"Jacklen Fandores",
-    title:"Web Designer",
-    image:"images/team2.jpg"
-  },{
-    id:3,
-    name:"Jacklen Fandores",
-    title:"Web Designer",
-    image:"images/team3.jpg"
-  },{
-    id:4,
-    name:"Jacklen Fandores",
-    title:"Web Designer",
-    image:"images/team4.jpg"
-  },{
-    id:5,
-    name:"Jacklen Fandores",
-    title:"Web Designer",
-    image:"images/team5.jpg"
-  },{
-    id:6,
-    name:"Jacklen Fandores",
-    title:"Web Designer",
-    image:"images/team6.jpg"
-  },{
-    id:7,
-    name:"Jacklen Fandores",
-    title:"Web Designer",
-    image:"images/team7.jpg"
-  },{
-    id:8,
-    name:"Jacklen Fandores",
-    title:"Web Designer",
-    image:"images/team8.jpg"
-  },{
-    id:9,
-    name:"Jacklen Fandores",
-    title:"Web Designer",
-    image:"images/team9.jpg"
-  },{
-    id:10,
-    name:"Jacklen Fandores",
-    title:"Web Designer",
-    image:"images/team10.jpg"
-  },{
-    id:11,
-    name:"Jacklen Fandores",
-    title:"Web Designer",
-    image:"images/team11.jpg"
-  },{
-    id:12,
-    name:"Jacklen Fandores",
-    title:"Web Designer",
-    image:"images/team12.jpg"
+    id: 2,
+    name: "Jacklen Fandores",
+    title: "Web Designer",
+    image: "images/team2.jpg",
   },
-]
+  {
+    id: 3,
+    name: "Jacklen Fandores",
+    title: "Web Designer",
+    image: "images/team3.jpg",
+  },
+  {
+    id: 4,
+    name: "Jacklen Fandores",
+    title: "Web Designer",
+    image: "images/team4.jpg",
+  },
+  {
+    id: 5,
+    name: "Jacklen Fandores",
+    title: "Web Designer",
+    image: "images/team5.jpg",
+  },
+  {
+    id: 6,
+    name: "Jacklen Fandores",
+    title: "Web Designer",
+    image: "images/team6.jpg",
+  },
+  {
+    id: 7,
+    name: "Jacklen Fandores",
+    title: "Web Designer",
+    image: "images/team7.jpg",
+  },
+  {
+    id: 8,
+    name: "Jacklen Fandores",
+    title: "Web Designer",
+    image: "images/team8.jpg",
+  },
+  {
+    id: 9,
+    name: "Jacklen Fandores",
+    title: "Web Designer",
+    image: "images/team9.jpg",
+  },
+  {
+    id: 10,
+    name: "Jacklen Fandores",
+    title: "Web Designer",
+    image: "images/team10.jpg",
+  },
+  {
+    id: 11,
+    name: "Jacklen Fandores",
+    title: "Web Designer",
+    image: "images/team11.jpg",
+  },
+  {
+    id: 12,
+    name: "Jacklen Fandores",
+    title: "Web Designer",
+    image: "images/team12.jpg",
+  },
+];
+export const Events = [
+  {
+    id: 1,
+    startDate: "Aug 28, 2019",
+    image: "images/pc1.jpg",
+    title: "Lorem ipsum dolor sit amet",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.",
+    type: "Happening",
+  },
+  {
+    id: 2,
+    startDate: "Aug 28, 2019",
+    image: "images/pc2.jpg",
+    title: "Lorem ipsum dolor sit amet",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.",
+    type: "Happening",
+  },
+  {
+    id: 3,
+    startDate: "Aug 28, 2019",
+    image: "images/pc3.jpg",
+    title: "Lorem ipsum dolor sit amet",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.",
+    type: "Upcoming",
+  },
+  {
+    id: 4,
+    startDate: "Aug 28, 2019",
+    image: "images/pc1.jpg",
+    title: "Lorem ipsum dolor sit amet",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.",
+    type: "Upcoming",
+  },
+  {
+    id: 5,
+    startDate: "Aug 28, 2019",
+    image: "images/pc2.jpg",
+    title: "Lorem ipsum dolor sit amet",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit lectus, non ornare nibh consectetur accumsan.",
+    type: "Expired",
+  },
+];

@@ -9,7 +9,6 @@ const GallerySection2 = ()=>{
 	const [gallery, setGallery] = useState(Gallery);
 
 	const tabAction = (tab)=>{
-		console.log(tab);
         if(tab === 'All'){
             setGallery(Gallery);
         }else{
@@ -29,8 +28,8 @@ const GallerySection2 = ()=>{
 								<div className="slider"></div>
 							</li>
 							{
-                                courseCategory && courseCategory.map((tab,index)=>(
-                                    <li key={index} role="presentation" className="active"><a onClick={()=>tabAction(tab)} style={{cursor:'pointer'}}>{tab}</a>
+                                courseCategory && courseCategory.map((tab)=>(
+                                    <li key={tab.id} role="presentation" className="active"><a onClick={()=>tabAction(tab)} style={{cursor:'pointer'}}>{tab}</a>
                             </li>
                                 ))
                             }
