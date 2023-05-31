@@ -1,6 +1,9 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const BlogSingleSection = ()=>{
+	const location = useLocation();
+	const data = location.state;
     return(
 <div class="blog_wrapper float_left">
 		<div class="container">
@@ -8,29 +11,29 @@ const BlogSingleSection = ()=>{
 				<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
 					<div class="blog-post-wrapper iner_blog">
 						<div class="post-thumbnail">
-							<img src="images/blog_single.jpg" class="img-responsive " alt="Image"/>
+							<img src={data.image} class="img-responsive " alt="Image"/>
 						</div>
 						{/* <!-- /.post-thumbnail --> */}
 						<div class="blog-content">
 							<header class="entry-header">
 								<div class="entry-meta">
 									<ul>
-										<li><i class="fa fa-user" aria-hidden="true"></i>  <a href="#">author</a>
+										<li><i class="fa fa-user" aria-hidden="true"></i>  <a href="#">{data.author}</a>
 										</li>
-										<li><i class="fa fa-calendar" aria-hidden="true"></i>  <a href="#">sept 19, 2019</a>
+										<li><i class="fa fa-calendar" aria-hidden="true"></i>  <a href="#">{data.date}</a>
 										</li>
-										<li><i class="fa fa-heart"></i><a href="#">39</a>
+										<li><i class="fa fa-heart"></i><a href="#">{data.love}</a>
 										</li>
-										<li><a href="#"><i class="far fa-eye"></i>25</a>
+										<li><a href="#"><i class="far fa-eye"></i>{data.view}</a>
 										</li>
 									</ul>
 								</div>
 								{/* <!-- /.entry-meta --> */}
-								<h4 class="entry-title"><a href="#">Online Education for Women Seminar</a></h4>
+								<h4 class="entry-title"><a href="#">{data.title}</a></h4>
 							</header>
 							{/* <!-- /.entry-header --> */}
 							<div class="entry-content">
-								<p>Education is the process of facilitating learning. Knowledge kills, values, beliefs, and habits of a group of people are transferred Friendly Schools is a multi-component, evidence-based, whole-school initiative involving the whole-school community to build social skills, create supportive environments and significantly reduce bullying in school communities. The traditional “chalk and talk” method of teaching that’s persisted for hundreds of years is now acquiring inferior results
+								<p>{data.discription}
 									<br/>
 									<br/>Education is the process of facilitating learning. Knowledge kills, values, beliefs, and habits of a group of people are transferred Friendly Schools is a multi-component, evidence-based, whole-school initiative involving the whole-school community</p>
 							</div> <a href="#" class="blog_read">read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>

@@ -1,6 +1,10 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const TeacherSingleSection = ()=>{
+	
+	const location = useLocation();
+	const data = location.state;
     return(
        <>
        <div className="page_title_section float_left">
@@ -31,15 +35,15 @@ const TeacherSingleSection = ()=>{
 			<div className="row">
 				<div className="col-lg-6 col-md-12 col-sm-12 col-12">
 					<div className="team_tittle_img">
-						<img src="images/header_img.jpg" alt="title_img" />
+						<img src={data.image} alt="title_img" />
 					</div>
 				</div>
 				<div className="col-lg-6 col-md-12 col-sm-12 col-12">
 					<div className="row">
 						<div className="col-md-12">
 							<div className="team_tittle_content">
-								<h3>Eacklen Fandores</h3>
-								<p>Graphic and Web Designer</p>
+								<h3>{data.name}</h3>
+								<p>{data.title}</p>
 							</div>
 						</div>
 						<div className="col-md-12">

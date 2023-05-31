@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { CourseData } from "../../data/home";
 
@@ -64,7 +65,7 @@ const PopularCourse = ()=>{
                                             <h4>Start Date : <span>{course.StartDate}</span></h4>
                                             <h3><a href="#">{course.title}</a></h3>
                                             <p>{course.description}</p>
-                                            <h5><a href="#">Join Now</a></h5>
+                                            <h5><Link to="/course_single" state={course}>Join Now</Link></h5>
                                         </div>
                                     </div>
                                 </div>))}

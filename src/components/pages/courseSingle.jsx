@@ -5,7 +5,6 @@ const CourseSingleSection = ()=>{
 
 	const location = useLocation();
 	const data = location.state;
-	console.log(data);
 
 	return(
         <>

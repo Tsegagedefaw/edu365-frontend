@@ -265,62 +265,62 @@ export const Blogs = [
 export const Gallery = [
   {
     id: 1,
-    image: "images/gallery1.jpg",
-    type: "html",
-  },
-  {
-    id: 2,
-    image: "images/gallery2.jpg",
-    type: "html",
-  },
-  {
-    id: 3,
-    image: "images/gallery3.jpg",
-    type: "html",
-  },
-  {
-    id: 4,
     image: "images/gallery4.jpg",
     type: "html",
   },
   {
+    id: 2,
+    image: "images/gallery3.jpg",
+    type: "html",
+  },
+  {
+    id: 3,
+    image: "images/gallery2.jpg",
+    type: "html",
+  },
+  {
+    id: 4,
+    image: "images/gallery1.jpg",
+    type: "html",
+  },
+  {
     id: 5,
-    image: "images/gallery5.jpg",
+    image: "images/gallery2.jpg",
     type: "html",
   },
   {
     id: 6,
-    image: "images/gallery6.jpg",
+    image: "images/gallery3.jpg",
     type: "html",
   },
   {
     id: 7,
-    image: "images/gallery7.jpg",
+    image: "images/gallery4.jpg",
     type: "psd",
   },
   {
     id: 8,
-    image: "images/gallery8.jpg",
+    image: "images/gallery5.jpg",
     type: "psd",
   },
   {
     id: 9,
-    image: "images/gallery9.jpg",
+    image: "images/gallery4.jpg",
     type: "psd",
   },
   {
     id: 10,
-    image: "images/gallery10.jpg",
+    image: "images/gallery3.jpg",
     type: "psd",
   },
   {
     id: 11,
-    image: "images/gallery11.jpg",
+    image: "images/gallery2.jpg",
     type: "WordPress",
   },
   {
     id: 12,
-    image: "images/gallery12.jpg",
+    image: "images/gallery1.jpg",
     type: "WordPress",
   },
 ];

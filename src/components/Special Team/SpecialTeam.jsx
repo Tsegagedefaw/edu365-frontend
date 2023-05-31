@@ -1,5 +1,6 @@
 import React from "react";
 import { User } from "../../data/home";
+import { Link } from "react-router-dom";
 const SpecialTeam = ()=>{
     return(
         <div className="edu_team_main_wrapper float_left">
@@ -14,7 +15,7 @@ const SpecialTeam = ()=>{
                 </div>
                 {User&&User.slice(0,4).map((users)=>(<div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 self_align_center">
                     <div key={users.id} className="edu_team_main_box">
-                        <h3><a href="#">{users.name}</a></h3>
+                        <h3><Link to="/teacher_single" state={users} >{users.name}</Link></h3>
                         <p>{users.title}</p>
                         <ul>
                             <li><a href="#"><i className="fab fa-facebook-f"></i></a>
@@ -32,7 +33,7 @@ const SpecialTeam = ()=>{
                     </div>
                 </div>))}
                 <div className="col-md-12">
-                    <div className="edu_bottom_btn_wrapper float_left"> <a href="/gallery2">View All</a>
+                    <div className="edu_bottom_btn_wrapper float_left"> <a href="/teacher_single">View All</a>
                     </div>
                 </div>
             </div>

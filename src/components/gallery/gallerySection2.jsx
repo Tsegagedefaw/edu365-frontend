@@ -36,36 +36,23 @@ const GallerySection2 = ()=>{
 						</ul>
 					</div>
 				</div>
-				<div className="col-md-12">
-                    <div className="tab-content">
-                            <div className="row">
-                                { gallery && gallery.map((course)=>(
-                                <div key={course.id} className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                                    <div className="edu_slide_tab_box float_left">
-                                        <div className="edu_slide_tabs_img_box float_left">
-                                            <img src="images/pc1.jpg" alt="img"/>
-                                            <div className="edu_tabs_label">
-                                                <p><del>${course.oldPrice}</del>
-                                                </p>
-                                                <div className="edu_tabs_label_inner">
-                                                    <p>${course.price}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="edu_slide_tabs_img_cont_box float_left">
-                                            <h4>Start Date : <span>{course.StartDate}</span></h4>
-                                            <h3><a href="#">{course.title}</a></h3>
-                                            <p>{course.description}</p>
-                                            <h5><a href="#">Join Now</a></h5>
-                                        </div>
-                                    </div>
-                                </div>))}
-                        </div>
-
-                    </div>
-                </div>
-				<div className="col-md-12">
-					<div className="edu_bottom_btn_wrapper float_left">	<a href="#">Read More</a>
+				<div class="col-md-12">
+					<div class="tab-content">
+						<div class="tab-pane active" role="tabpanel">
+							<div class="row">
+                                {gallery && gallery.map((photo)=>(
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                
+                                    <div class="edu_gallery_img_wrapper d-flex flex-wrap">
+										<img src={photo.image} alt="screenshot"/>
+										<div class="edu_gallery_slider_overlay">	<a href={photo.image} class="venobox info" data-title="PORTFOLIO TITTLE" data-gall="gall12"><i class="flaticon-plus-symbol"></i></a>
+										</div>
+                                        
+									</div>
+								</div>
+                                ))}
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

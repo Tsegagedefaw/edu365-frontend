@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import {User} from "../../data/home";
 
@@ -34,7 +35,7 @@ const TeacherSection = ()=>{
 				<div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-3 self_align_center">
 					
 						<div className="edu_team_main_box">
-							<h3><a href="#">{users.name}</a></h3>
+							<h3><Link to="/teacher_single" state={users}>{users.name}</Link></h3>
 							<p>{users.title}</p>
 							<ul>
 								<li><a href="#"><i className="fab fa-facebook-f"></i></a>

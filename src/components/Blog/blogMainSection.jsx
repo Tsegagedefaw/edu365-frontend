@@ -1,7 +1,8 @@
 import React from "react";
 import {useState} from "react"
-
+import { Link } from "react-router-dom";
 import {Blogs} from "../../data/home";
+
 import { TagsCloud } from "../../data/home";
 const BlogMainSection = ()=>{
 
@@ -48,7 +49,7 @@ const BlogMainSection = ()=>{
 											</li>
 										</ul>
 									</div>
-									<h4 className="entry-title"><a href="#">{blogs.title}</a></h4>
+									<h4 className="entry-title"><Link to="/blog_single" state={blogs}>{blogs.title}</Link></h4>
 								</header>
 								{/* <!-- /.entry-header --> */}
 								<div className="entry-content">
@@ -93,7 +94,7 @@ const BlogMainSection = ()=>{
 								<img src={blogs.image} className="img-responsive" width={'80px'} height={'70px'} alt="blog_img1" />
 							</div>
 							<div className="blog_text">
-								<h5><a href="#">{blogs.title}</a></h5>
+								<h5><Link to="/blog_single" state={blog}>{blogs.title}</Link></h5>
 								<div className="blog_date">{blogs.date}</div>
 							</div>
 						</div>))}

@@ -10,11 +10,11 @@ import Footer from "../components/Footer/footer";
 const TeacherSingle = () => {
   return (
     <>
-    <div id="preloader">
+    {/* <div id="preloader">
         <div id="status">
             <img src="images/preloader.gif" id="preloader_image" alt="loader"/>
         </div>
-    </div>
+    </div> */}
       <TopHeader />
       <MainHeader />
       <a id="back2Top" title="Back to top" href="#">&#10148;</a>
