@@ -1,7 +1,21 @@
 import React from "react";
-
+import { useState,useEffect } from "react";
 
 const Register = () => {
+	const [loading,setLoading] = useState(true);
+
+	useEffect(()=>{
+	  setLoading(false);
+	},[])
+  if(loading){
+	return(
+	  <div id="preloader">
+	  <div id="status">
+		  <img src="images/preloader.gif" id="preloader_image" alt="loader"/>
+	  </div>
+  </div>
+	)
+  }else{
   return (
     <>
       <div class="login_section">
@@ -70,4 +84,5 @@ const Register = () => {
     </>
   );
 };
+}
 export default Register;

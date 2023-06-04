@@ -1,10 +1,15 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import { TagsCloud } from "../../data/home";
+
+import { useState } from "react";
 
 const CourseSingleSection = ()=>{
 
 	const location = useLocation();
-	const data = location.state;
+	const datas = location.state;
+
+	const [data,setData] = useState(datas);
 
 	return(
         <>
@@ -36,7 +41,7 @@ const CourseSingleSection = ()=>{
 				<div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
 					<div className="blog-post-wrapper iner_blog">
 						<div className="post-thumbnail">
-							<img src={data.image} style={{maxHeight:'400px'}} className="img-responsive " alt="Image"/>
+							{data.image && <img src={data.image} style={{maxHeight:'400px'}} className="img-responsive " alt="Image"/>}
 						</div>
 						{/* <!-- /.post-thumbnail --> */}
 						<div className="row">
@@ -394,32 +399,10 @@ const CourseSingleSection = ()=>{
 						</div>
 						<div className="sidebar_tag_cloud">
 							<ul>
-								<li><a href="#">business </a>
-								</li>
-								<li><a href="#">html</a>
-								</li>
-								<li><a href="#">PSD</a>
-								</li>
-								<li><a href="#">corporate </a>
-								</li>
-								<li><a href="#">customer</a>
-								</li>
-								<li><a href="#">money</a>
-								</li>
-								<li><a href="#">webstrot</a>
-								</li>
-								<li><a href="#">services</a>
-								</li>
-								<li><a href="#">joomla</a>
-								</li>
-								<li><a href="#">skils</a>
-								</li>
-								<li><a href="#">prices</a>
-								</li>
-								<li><a href="#">partners</a>
-								</li>
-								<li><a href="#">wordpress</a>
-								</li>
+								{TagsCloud && TagsCloud.map((tags,index)=>(
+								<li key={index}><a href="#">{tags} </a>
+								</li>))}
+								
 							</ul>
 						</div>
 					</div>

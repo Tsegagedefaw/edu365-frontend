@@ -262,6 +262,34 @@ export const Blogs = [
     text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isnt anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary",
   },
 ];
+export const BlogComment = [
+  {
+    id:1,
+    name:'Jhon Doe',
+    image:'images/author1.jpg',
+    date:'July 1, 2019',
+    comment:'Integer porttitor fringilla vestibulum. Phasellus curs our tinnt nulla, ut mattis augue finibus ac. Vivamus elementum enim ac enim ultrices rhoncus.1111'
+  },
+  {
+    id:2,
+    name:'Steffa Ferello',
+    image:'images/author1.jpg',
+    date:'July 1, 2019',
+    comment:'Integer porttitor fringilla vestibulum. Phasellus curs our tinnt nulla, ut mattis augue finibus ac. Vivamus elementum enim ac enim ultrices rhoncus.1111'
+  },{
+    id:3,
+    name:'Matin Lauran',
+    image:'images/author1.jpg',
+    date:'July 1, 2019',
+    comment:'Integer porttitor fringilla vestibulum. Phasellus curs our tinnt nulla, ut mattis augue finibus ac. Vivamus elementum enim ac enim ultrices rhoncus.1111'
+  },{
+    id:4,
+    name:'Eva Marilla',
+    image:'images/author1.jpg',
+    date:'July 1, 2019',
+    comment:'Integer porttitor fringilla vestibulum. Phasellus curs our tinnt nulla, ut mattis augue finibus ac. Vivamus elementum enim ac enim ultrices rhoncus.1111'
+  },
+]
 export const Gallery = [
   {
     id: 1,
@@ -445,6 +473,34 @@ export const Events = [
     type: "Expired",
   },
 ];
+export const EventComment = [
+  {
+    id:1,
+    name:'Jhon Doe',
+    image:'images/author1.jpg',
+    date:'July 1, 2019',
+    comment:'Integer porttitor fringilla vestibulum. Phasellus curs our tinnt nulla, ut mattis augue finibus ac. Vivamus elementum enim ac enim ultrices rhoncus.1111'
+  },
+  {
+    id:2,
+    name:'Steffa Ferello',
+    image:'images/author1.jpg',
+    date:'July 1, 2019',
+    comment:'Integer porttitor fringilla vestibulum. Phasellus curs our tinnt nulla, ut mattis augue finibus ac. Vivamus elementum enim ac enim ultrices rhoncus.1111'
+  },{
+    id:3,
+    name:'Matin Lauran',
+    image:'images/author1.jpg',
+    date:'July 1, 2019',
+    comment:'Integer porttitor fringilla vestibulum. Phasellus curs our tinnt nulla, ut mattis augue finibus ac. Vivamus elementum enim ac enim ultrices rhoncus.1111'
+  },{
+    id:4,
+    name:'Eva Marilla',
+    image:'images/author1.jpg',
+    date:'July 1, 2019',
+    comment:'Integer porttitor fringilla vestibulum. Phasellus curs our tinnt nulla, ut mattis augue finibus ac. Vivamus elementum enim ac enim ultrices rhoncus.1111'
+  },
+]
 export const Count = [
   {
     id:1,

@@ -1,5 +1,6 @@
-	import React from "react";
+import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import {Events} from "../../data/home";
 
@@ -61,15 +62,14 @@ const EventSection = ()=>{
 							{events&&events.map((event)=>(
 							<li key={event.id} role="presentation" className="active"><a onClick={()=>funcEvent(event)} href="#" role="tab" data-toggle="tab">{event}</a>
 							</li>
-							))}
+							))} 
 							
 						</ul>
 					</div>
 				</div>
 				<div className="col-md-12">
 					<div className="tab-content">
-						
-							<div className="tab-pane active" role="tabpanel">
+						<div className="tab-pane active" role="tabpanel">
 							<div className="row">
 								{allevent&&allevent.map((event)=>(
 								<div className="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
@@ -87,15 +87,13 @@ const EventSection = ()=>{
 											<h4>Start Date : <span>{event.startDate}</span></h4>
 											<h3><a href="#">{event.title}</a></h3>
 											<p>{event.description}</p>
-											<h5><a href="#">Join Now</a></h5>
+											<h5><Link to="/event_single" state={event}>Join Now</Link></h5>
 										</div>
 									</div>
 								</div>
 								))}
 							</div>
-						</div>
-						
-						
+						</div>						
 					</div>
 				</div>
 			</div>

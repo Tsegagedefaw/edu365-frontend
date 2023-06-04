@@ -1,6 +1,20 @@
 import React from "react";
-
+import { useState,useEffect } from "react";
 const Login = () => {
+	const [loading,setLoading] = useState(true);
+
+	useEffect(()=>{
+	  setLoading(false);
+	},[])
+  if(loading){
+	return(
+	  <div id="preloader">
+	  <div id="status">
+		  <img src="images/preloader.gif" id="preloader_image" alt="loader"/>
+	  </div>
+  </div>
+	)
+  }else{
   return (
     <>
   <div className="login_section">
@@ -38,7 +52,7 @@ const Login = () => {
 									Forgot Password
 								</a>
 							</div>
-							<div className="login_btn_wrapper">	<a href="#" className="btn btn-primary login_btn"> Login </a>
+							<div className="login_btn_wrapper">	<a href="/" className="btn btn-primary login_btn"> Login </a>
 							</div>
 							<div className="login_message">
 								<p>Don’t have an account ? <a href="/register"> Register Now </a> 
@@ -56,4 +70,5 @@ const Login = () => {
     </>
   );
 };
+}
 export default Login;

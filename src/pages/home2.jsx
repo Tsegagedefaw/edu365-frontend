@@ -1,4 +1,7 @@
 import React from "react";
+import { useState,useEffect } from "react";
+
+
 import HeaderNav2 from "../components/Header/headerNav2";
 import Home2Slide from "../components/Slide/home2Slide";
 import FinderSection from "../components/Finder Section/finderSection";
@@ -15,13 +18,23 @@ import Signup from "../components/SignUp/Signup";
 import Footer from "../components/Footer/footer";
 
 const Home2 = () => {
-  return (
-    <>
-    <div id="preloader">
+
+  const [loading, setLoading] = useState(true);
+  useEffect(()=>{
+    setLoading(false);
+  },[]);
+  if(loading){
+    return(
+      <div id="preloader">
         <div id="status">
             <img src="images/preloader.gif" id="preloader_image" alt="loader"/>
         </div>
     </div>
+    )
+  }else{
+     return (
+    <>
+    
       
       <HeaderNav2 />
       <a id="back2Top" title="Back to top" href="#">&#10148;</a>
@@ -40,5 +53,7 @@ const Home2 = () => {
       <Footer />
     </>
   );
+  }
+ 
 };
 export default Home2;
